@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js" type="module"></script>
+  <title>ToDo List</title>
+</head>
+<body>
+
+  <!-- background pattern -->
+    <div class="background-pattern">
+      <div class="background__circle--green"></div>
+      <div class="background__circle--orange"></div>
+      <div class="background__circle--purple"></div>
+    </div>
+  <!-- end background pattern -->
+ 
+
+  <!-- layout -->
+<div class="layout">
+
+  <!-- header -->
+  <header>
+    <h1>To Do the Cake or Not to Do the Cake...</h1>
+  </header>
+  <!-- end header -->
+
+<!-- main -->
+<main>
+  <div class="modal-container ">
+    <div class="modal-container__card bounce-in-top">
+      <h3 class="modal-card__title">The cake exists already!</h3>
+      <p class="modal-card__text">Please enter a new cake.</p>
+      <button class="modal-card__btn">x</button>
+    </div>
+  </div>
+<!-- new item -->
+  <div class="new-item">
+    <h2 class="new-item__title">Add new cake to your list</h2>
+    <div class="new-item__input-wrapper">
+      <input class="new-item__input" type="text" placeholder="Add new cake title">
+      <button class="new-item__btn">+</button>
+    </div>
+  </div>
+<!-- end new item -->
+
+<!-- to do list -->
+<h3>List of cakes to make this month</h3>
+  
+<!-- end to do list -->
+</main>  
+  <!-- end main -->
+</div>
+  <!-- end layout -->
+
+  
+</body>
+</html>

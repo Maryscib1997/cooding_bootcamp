@@ -1,0 +1,164 @@
+/* GENERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #FAF9F6;
+  position: relative;
+  height: 100vh;
+}
+
+/* COLOR VARIABLES */
+:root {
+  --bg-color: #FAF9F6;
+  --text-white: #FAF9F6;
+  --text-dark: #001a00;
+  --highlight-orange:#FA9E05;
+  --hightlight-green: #4A772F;
+  --hightlight--purple: #A7095C;
+}
+
+/* BACKGROUND PATTERN */
+.background-pattern {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index: -1;
+  overflow: hidden;
+  
+}
+
+.background__circle--orange,
+.background__circle--green,
+.background__circle--purple {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.97;
+      
+}
+
+    .background__circle--green {
+      width: 80vw;
+      height: 80vw;
+      background-color: var(--hightlight-green);
+      top: -15vw;
+      left: -10vw;
+    }
+
+      
+    .background__circle--orange {
+      width: 60vw;
+      height: 60vw;
+      background-color: var(--highlight-orange);
+      top: -10vw;
+      right: -10vw;
+      z-index:-2; 
+    }
+  
+    .background__circle--purple {
+      width: 50vw;
+      height: 50vw;
+      background-color: var(--hightlight--purple);
+      top: 40vw;
+      right: -15vw;  
+    }
+
+
+/* LAYOUT */
+.layout {
+  max-width: 80%;
+  margin: 0 auto;
+  
+}
+
+/* header */
+header {
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--text-dark);
+  
+}
+
+header p {
+  font-size: 50px;
+  font-weight: 300;
+  color: var(--text-dark);
+}
+
+/* main */
+.new-item {
+  margin-block: 4rem;
+  position:relative;
+}
+
+.new-item__title {
+  font-size: 40px;
+  color:var(--text-dark);
+}
+
+.new-item__input-wrapper {
+  position: relative;
+  max-width: 50%;
+  display:flex;
+  align-items: center;
+}
+
+.new-item__input {
+  border:none;
+  background-color: transparent;
+  border-bottom:0.5px solid var(--hightlight-green);
+  width:100%;
+  padding:1rem;
+  color:var(--text-dark);
+  
+}
+
+.new-item__input:focus {
+  outline:none;
+}
+
+.new-item__btn {
+  position:absolute;
+  right:0;
+  width:30px;
+  border-radius:50%;
+  background-color: var(--hightlight-green);
+  color: var(--text-dark);
+  opacity: 0.9;
+}
+
+/* to do list */
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 2rem 0;
+}
+
+.todo-card {
+  border: 1px solid var(--hightlight--purple);
+  width: 180px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 16px;
+}
+
+.todo-card__img {
+  border-radius: 50%;
+  height: auto; 
+}

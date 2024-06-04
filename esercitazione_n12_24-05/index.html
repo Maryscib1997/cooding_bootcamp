@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eserzio 24 maggio</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="container">
+
+        <h1 title="Titolo" id="heading"></h1>
+        <p class="description"></p>
+        
+        <button data-reset>Cancel</button>
+        <button data-increment>Conta!</button>
+    </div>
+
+    <form>
+        <div>
+            <label for="nomi">Lista nomi e cognomi</label>
+            <input 
+                id="nomi" 
+                name="nomi" 
+                type="text" 
+                minlength="3" 
+                autocomplete="off" 
+            />
+        </div>
+    
+        <button type="submit">Invia</button> 
+    </form>
+    
+    <ul class="list"></ul>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>

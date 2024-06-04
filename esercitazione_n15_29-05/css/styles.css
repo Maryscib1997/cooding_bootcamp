@@ -1,0 +1,272 @@
+/* GENERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #FAF9F6;
+  color: var(--text-dark);
+  position: relative;
+  height: 100%;
+}
+
+/* COLOR VARIABLES */
+:root {
+  --bg-color: #FAF9F6;
+  --text-white: #FAF9F6;
+  --text-dark: #001a00;
+  --highlight-orange:#FA9E05;
+  --hightlight-green: #4A772F;
+  --hightlight-purple: #A7095C;
+}
+
+/* BACKGROUND PATTERN */
+.background-pattern {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: -1;
+  overflow: hidden;
+  
+}
+
+.background__circle--orange,
+.background__circle--green,
+.background__circle--purple {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.97;
+      
+}
+
+    .background__circle--green {
+      width: 80vw;
+      height: 80vw;
+      background-color: var(--hightlight-green);
+      top: -15vw;
+      left: -10vw;
+    }
+
+      
+    .background__circle--orange {
+      width: 60vw;
+      height: 60vw;
+      background-color: var(--highlight-orange);
+      top: -10vw;
+      right: -10vw;
+      z-index:-2; 
+    }
+  
+    .background__circle--purple {
+      width: 50vw;
+      height: 50vw;
+      background-color: var(--hightlight-purple);
+      top: 40vw;
+      right: -15vw;  
+    }
+
+
+/* LAYOUT */
+.layout {
+  max-width: 80%;
+  margin: 0 auto;
+  z-index: 1;
+  
+}
+
+/* header */
+header {
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: 500; 
+}
+
+header p {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+/* main */
+.new-item {
+  margin-block: 2rem;
+  position: relative;
+}
+
+.new-item__title {
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+.new-item__input-wrapper {
+  position: relative;
+  max-width: 80%;/*adjust on desktop*/
+  display: flex;
+  align-items: center;
+  margin: 0 auto; 
+}
+
+.new-item__input {
+  border:none;
+  background-color: transparent;
+  border-bottom: 0.5px solid var(--hightlight-green);
+  width: 100%;
+  padding: 1rem;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1.4px;
+}
+
+::placeholder {
+  color: var(--hightlight-green);
+}
+
+.new-item__input:focus {
+  outline:none;
+}
+
+.new-item__btn {
+  position:absolute;
+  right: 0;
+  width: 30px;
+  padding: 6px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: larger;
+  font-weight: 400;
+  color: var(--hightlight-green);
+}
+
+.new-item__btn:hover {
+  cursor:pointer; 
+}
+
+/* to do list */
+h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-block: 3rem;
+}
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.todo-card {
+  border: 2px solid var(--highlight-orange);
+  width: 200px;
+  aspect-ratio: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:stretch;
+  gap: 10px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.todo-card__img {
+  border-radius: 8px;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  
+}
+
+
+/* RESPONSIVE BACKGROUND PATTERN */
+@media (min-width: 768px) {
+  .background__circle--green {
+    width: 65vw;
+    height: 65vw;
+    top: -15vw;
+    left: -10vw;
+  }
+
+  .background__circle--orange {
+    width: 65vw;
+    height: 65vw;
+    top: -15vw;
+    right: -7.5vw;
+  }
+
+  .background__circle--purple {
+    width: 40vw;
+    height: 40vw;
+    top: 30vw;
+    right: -10vw;
+  }
+
+  /* responsive input */
+
+  .new-item__input-wrapper {
+    max-width: 50%;
+      
+  }
+
+  .new-item__input {
+    font-weight: 500;
+    
+  }
+
+    ::placeholder {
+      color:var(--text-dark);
+    }
+
+.new-item__btn {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  padding: 6px;
+  border: none;
+  border-radius: 50%;
+  background-color:var(--hightlight-green);
+  font-size: larger;
+  font-weight: 400;
+  color: var(--text-white);
+}
+    
+
+}
+
+@media (min-width: 1200px) {
+  .background__circle--green {
+    width: 50vw;
+    height: 50vw;
+    top: -8vw;
+    left: -8vw;
+  }
+
+  .background__circle--orange {
+    width: 80vw;
+    height: 80vw;
+    top: -45vw;
+    right: -5vw;
+  }
+
+  .background__circle--purple {
+    width: 35vw;
+    height: 35vw;
+    top: -5vw;
+    right: -8vw;
+  }
+
+    .new-item__input-wrapper {
+      max-width: 50%;
+    }
+
+
+}
