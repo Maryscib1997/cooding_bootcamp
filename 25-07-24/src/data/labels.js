@@ -2,7 +2,7 @@ export const labels = {
 	vinylTableTitle: "Title",
 	vinylTableAuthor: "Author",
 	vinylTableGenre: "Genre",
-	vinylTableISBN: "EAN13",
+	vinylTableEAN13: "EAN13",
 	vinylTableBtnDetail: "Details",
 
 	vinylList: "Vinyl list",
