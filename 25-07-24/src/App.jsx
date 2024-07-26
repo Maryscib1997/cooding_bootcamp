@@ -37,10 +37,10 @@ function App() {
         <main className="w-[1200px] ">
           <button onClick={() => navigate(+1)}>avanti</button>
           <div className="p-4 ">
-            <h1 className="">{labels.vinylList}</h1>  // Modificato
+            <h1 className="">{labels.vinylList}</h1>  
           </div>
           <div className="flex gap-2 items-center">
-            <h2>{labels.filterVinylByTitle}</h2>  // Modificato
+            <h2>{labels.filterVinylByTitle}</h2> 
             <input
               className="border-slate-400 border-2 p-2"
               type="text"
@@ -55,16 +55,16 @@ function App() {
               <thead className="text-left">
                 <tr>
                   <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.vinylTableTitle}  // Modificato
+                    {labels.vinylTableTitle}  
                   </th>
                   <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.vinylTableArtist}  // Modificato
+                    {labels.vinylTableArtist} 
                   </th>
                   <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.vinylTableGenre}  // Modificato
+                    {labels.vinylTableGenre}  
                   </th>
                   <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {labels.vinylTableEAN13}  // Modificato
+                    {labels.vinylTableEAN13}  
                   </th>
                   <th className="px-4 py-2"></th>
                 </tr>
