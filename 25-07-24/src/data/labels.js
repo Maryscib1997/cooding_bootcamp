@@ -8,5 +8,11 @@ export const labels = {
 	vinylList: "Vinyl list",
 	vinylPassionTitle: "VinylPassion",
 
-	navHome: "Home"
+	navHome: "Home",
+	filterVinylByTitle: "Filter Vinyl by Title:",
+	insertVinylTitle: "Insert Vinyl Title",
+
+	isLoading: "Is loading...",
+
+	errorHuHo: "Hu-oh"
 }
