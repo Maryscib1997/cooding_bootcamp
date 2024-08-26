@@ -1,0 +1,14 @@
+1. Principali componenti del mini-compilatore
+•	Function tokenizer: analizza il codice sorgente e lo divide in "token" ovvero parole chiave e operatori; 
+•	Function parser: analizza la sequenza di token prodotta da tokenizer;
+•	Function transformer: riceve “ast” da parsen; 
+•	Function codeGenerator  
+
+2. Function tokenizer 
+Prende il codice sorgente come input per divederlo in token, ovvero una sequenza di caratteri come parole chiavi, punteggiatura, numeri, e stringe di caratteri tipografici. Inoltre, tokenizer restituisce un array di token che poi verrà analizzata da parser. 
+
+3. Function parser 
+Parser prende la sequenza di token generata dal tokenizer e restituisce una struttura ad albero che rappresenta la struttura del programma, “ast”. 
+
+4. Parti utili che potrebbero essere utili per un conta carattere
+La function tokenizer perché i token rappresentano sequenze di caratteri tipografici, inoltre potrebbe anche essere utile il fatto che le classifica per diverse tipologia di segni tipografici come lettere, numeri, segni di interpunzione. 
