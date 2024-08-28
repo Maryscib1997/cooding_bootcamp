@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;  
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+li span {
+  flex: 1;
+}
+
+li button {
+  background-color: #eb2020;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+li button:hover {
+  background-color:#eb2020;
+}

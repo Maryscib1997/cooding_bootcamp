@@ -1,0 +1,39 @@
+.post {
+    background-color: #fffeeb;
+    padding: 30px;
+    max-width: 800px; 
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  button {
+    background-color: #D4AC0D; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; 
+  }
+  
