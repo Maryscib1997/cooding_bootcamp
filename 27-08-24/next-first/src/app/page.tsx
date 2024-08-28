@@ -7,6 +7,8 @@ const Home = () => {
     { id: 2, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
     { id: 3, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
     { id: 4, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
+    { id: 5, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
+    { id: 6, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },   
   ];
 
   return (
