@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -135,3 +136,142 @@
       order: 3;
     }
   }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100dvh;
+  }
+  
+  .app :nth-child(1),
+  .app :nth-child(2),
+  .app :nth-child(3),
+  .app :nth-child(4),
+  .app :nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 700;
+    flex: 1;
+  }
+  
+  .header {
+    background-color: red;
+  }
+  
+  .left {
+    background-color: yellow;
+  }
+  
+  .right {
+    background-color: green;
+  }
+  
+  .footer {
+    background-color:blue;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .app {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+    }
+  
+    .app :nth-child(1),
+    .app :nth-child(2),
+    .app :nth-child(3),
+    .app :nth-child(4),
+    .app :nth-child(5) {
+      flex: none;
+    }
+  
+    .header {
+      width: 100vw;
+      height: 50px;
+    }
+  
+    .main {
+      width: 100%;
+    }
+  
+    .left {
+      width: 50%;
+    }
+  
+    .right {
+      width: 50%;
+    }
+  
+    .main,
+    .left,
+    .right {
+      height: calc((100dvh - 100px) / 2);
+    }
+  
+    .footer {
+      width: 100vw;
+      height: 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .app {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+    }
+  
+    .app :nth-child(1),
+    .app :nth-child(2),
+    .app :nth-child(3),
+    .app :nth-child(4),
+    .app :nth-child(5) {
+      flex: none;
+    }
+  
+    .header {
+      width: 100vw;
+      height: 50px;
+    }
+  
+    .main {
+      width: 50%;
+      order: 1;
+    }
+  
+    .left {
+      width: 25%;
+      order: 0;
+    }
+  
+    .right {
+      width: 25%;
+      order: 2;
+    }
+  
+    .main,
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(100dvh - 100px);
+    }
+  
+    .footer {
+      width: 100vw;
+      height: 50px;
+      order: 3;
+    }
+  }
+>>>>>>> f5516dda867c56536613e003d050e9e758f98dfc

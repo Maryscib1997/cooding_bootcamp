@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .counter {
     background-color: var(--light-grayish-blue);
     border-radius: 8px;
@@ -13,4 +14,21 @@
   
   .counter div {
     text-align: center;
+=======
+.counter {
+    background-color: var(--light-grayish-blue);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .counter button {
+    all: unset;
+    padding: 8px 16px;
+  }
+  
+  .counter div {
+    text-align: center;
+>>>>>>> f5516dda867c56536613e003d050e9e758f98dfc
   }

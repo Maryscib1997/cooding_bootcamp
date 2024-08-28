@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -16,4 +17,24 @@
 
 img {
     width: 100%;
+=======
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.355);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+>>>>>>> f5516dda867c56536613e003d050e9e758f98dfc
 }

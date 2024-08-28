@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button {
     background-color: var(--orange);
     border: none;
@@ -13,3 +14,20 @@
     margin-top: 16px; 
     text-align: right; 
   }
+=======
+.button {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 16px;
+    padding: 16px 64px;
+    margin-top: 16px; 
+    text-align: right; 
+  }
+>>>>>>> f5516dda867c56536613e003d050e9e758f98dfc

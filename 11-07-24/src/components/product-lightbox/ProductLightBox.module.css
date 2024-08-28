@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .product-lightbox {
   width: 450px;
 }
@@ -16,3 +17,23 @@
   margin-top: 16px; 
   text-align: right; 
 }
+=======
+.product-lightbox {
+  width: 450px;
+}
+
+.thumbnail-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.thumbnail-list > li {
+  list-style: none;
+}
+
+.button-container {
+  margin-top: 16px; 
+  text-align: right; 
+}
+>>>>>>> f5516dda867c56536613e003d050e9e758f98dfc

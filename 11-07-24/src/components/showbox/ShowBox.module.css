@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .showBox {
     width: 450px;
     height: 450px;
@@ -7,4 +8,15 @@
   
   .showBox > img {
     width: 100%;
+=======
+.showBox {
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .showBox > img {
+    width: 100%;
+>>>>>>> f5516dda867c56536613e003d050e9e758f98dfc
   }
