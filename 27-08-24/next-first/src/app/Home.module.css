@@ -1,60 +1,165 @@
+/* Stile per il contenitore */
 .container {
-    padding: 20px;
-    text-align: center;
-    background-color: #ebebeb;
-  }
-  
+  text-align: center;
+  background-color: #ebebeb;
+}
+
+/* Stile per la navbar */
+.navbar {
+  background-color: #413e3e;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Logo nella navbar */
+.navLogo {
+  width: 150px; 
+  height: auto;
+}
+
+/* Lista di navigazione nella navbar */
+.navList {
+  list-style-type: none;
+  margin: 0; 
+  padding: 0; 
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Elementi della lista di navigazione */
+.navItem {
+  padding: 10px; 
+}
+
+.navItem a { 
+  color: white; 
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hover su link della navbar */
+.navItem a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Logo principale */
 .logo {
-    width: 500px;   
-    height: auto;    
-    margin-bottom: 40px;  
-  }
+  width: 500px;   
+  height: auto;    
+  margin-bottom: 40px;  
+  margin-top: 40px;
+}
 
-
+/* Contenitore delle card */
 .cardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;     
-    justify-content: center;  
-    margin-top: 60px;
-  }
-  
- .card {
-    width: 200px;   
-    padding: 10px;   
-    border: 1px solid #ddd;  
-    text-align: center;   
-    background-color: #fff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .cardImage {
-    width: 100%;   
-    height: auto;  
-  }
-  
-  .cardTitle {
-    margin: 10px 0; 
-    font-size: 20px; 
-  }
-  
-  .cardAuthor {
-    margin: 10px 10px;   
-    font-size: 16px; 
-    color: #555;     
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;     
+  justify-content: center;  
+  margin-top: 60px;
+}
 
-  .playButton {
-    background-color: #000000;  
-    color: #fff;  
-    border: none;  
-    padding: 10px 20px; 
-    font-size: 16px; 
-    cursor: pointer;  
-    transition: background-color 0.3s;
-  }
-  
-  .playButton:hover {
-    background-color: #ebebeb;  
-    color: #000000;
-  }
+/* Card */
+.card {
+  width: 200px;   
+  padding: 10px;   
+  border: 1px solid #ddd;  
+  text-align: center;   
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Immagine della card */
+.cardImage {
+  width: 100%;   
+  height: auto;  
+}
+
+/* Titolo della card */
+.cardTitle {
+  margin: 10px 0; 
+  font-size: 20px; 
+}
+
+/* Autore della card */
+.cardAuthor {
+  margin: 10px 10px;   
+  font-size: 16px; 
+  color: #555;     
+}
+
+/* Pulsante di play */
+.playButton {
+  background-color: #000000;  
+  color: #fff;  
+  border: none;  
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer;  
+  transition: background-color 0.3s;
+}
+
+/* Hover sul pulsante di play */
+.playButton:hover {
+  background-color: #ebebeb;  
+  color: #000000;
+}
+
+/* Stile per il footer */
+.footer {
+  background-color: #413e3e;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 140px;
+}
+
+/* Logo nel footer */
+.footerLogo {
+  margin-bottom: 20px; /* Spazio tra il logo e la nav del footer */
+}
+
+.footerLogoImage {
+  width: 150px;
+  height: auto;
+}
+
+/* Navigazione nel footer */
+.footerNav {
+  margin-bottom: 20px; /* Spazio tra la nav e il testo del footer */
+}
+
+.footerNav .navList {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footerNav .navItem {
+  margin: 0 15px; /* Spazio tra gli elementi di navigazione */
+}
+
+/* Testo del footer */
+.footerText {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footerText p {
+  margin: 5px 0; 
+}
