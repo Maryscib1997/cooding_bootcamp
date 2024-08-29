@@ -2,11 +2,12 @@
 .container {
   text-align: center;
   background-color: #ebebeb;
+  font-family: Helvetica, sans-serif;
 }
 
 /* Stile per la navbar */
 .navbar {
-  background-color: #413e3e;
+  background-color: #000000;
   padding: 20px;
   margin: 0;
   width: 100%;
@@ -49,12 +50,24 @@
   border-radius: 5px;
 }
 
-/* Logo principale */
+/* Logo Home */
 .logo {
-  width: 500px;   
-  height: auto;    
-  margin-bottom: 40px;  
-  margin-top: 40px;
+  width: 100%;    
+  height: 630px; 
+  object-fit: cover; 
+}
+
+/* Testo sopra l'immagine */
+.imageText {
+  position: absolute; 
+  top: 80%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 28px; 
+  font-weight: bold; 
+  padding: 10px;
+  border-radius: 8px; 
 }
 
 /* Contenitore delle card */
@@ -63,17 +76,21 @@
   flex-wrap: wrap;
   gap: 20px;     
   justify-content: center;  
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 /* Card */
 .card {
-  width: 200px;   
-  padding: 10px;   
-  border: 1px solid #ddd;  
-  text-align: center;   
-  background-color: #fff; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 530px; 
 }
 
 /* Immagine della card */
@@ -97,12 +114,12 @@
 
 /* Pulsante di play */
 .playButton {
-  background-color: #000000;  
-  color: #fff;  
-  border: none;  
-  padding: 10px 20px; 
-  font-size: 16px; 
-  cursor: pointer;  
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
@@ -114,7 +131,7 @@
 
 /* Stile per il footer */
 .footer {
-  background-color: #413e3e;
+  background-color: #000000;
   padding: 20px;
   width: 100%;
   display: flex;

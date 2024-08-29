@@ -1,18 +1,40 @@
-// src/app/page.tsx
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import styles from './Home.module.css';
 import Link from 'next/link';
 
+
+// Definizione del tipo per le card
+interface Card {
+  id: number;
+  image: string;
+  title: string;
+  author: string;
+}
+
 const Home: React.FC = () => {
-  // Dati per le card
-  const cards = [
-    { id: 1, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
-    { id: 2, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
-    { id: 3, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
-    { id: 4, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
-    { id: 5, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' },
-    { id: 6, image: '/img/card/sinfonia.jpg', title: 'Sinfonia n. 5', author: 'Ludwig van Beethoven' }
-  ];
+  const [cards, setCards] = useState<Card[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchCards = async () => {
+      try {
+        const response = await fetch('/api/cards.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data: Card[] = await response.json();
+        console.log('Data ricevuti:', data);
+        setCards(data);
+      } catch (error: any) {
+        console.error('Errore nel fetch:', error.message);
+        setError(`Impossibile caricare le card: ${error.message}`);
+      }
+    };
+
+    fetchCards();
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -32,24 +54,30 @@ const Home: React.FC = () => {
 
       {/* Contenuto principale */}
       <img 
-        src="/img/sight music_marchio.png"  
-        alt="Sight Music Logo"  
+        src="/img/imghome.jpg"  
+        alt="Sight Music home"  
         className={styles.logo} 
       />
-      <p>Ascolta e osserva la musica</p>
+      <p className={styles.imageText}>Ascolta e osserva la musica</p>
       <div className={styles.cardContainer}>
-        {cards.map(card => (
-          <div key={card.id} className={styles.card}>
-            <img 
-              src={card.image} 
-              alt={`Card ${card.id}`} 
-              className={styles.cardImage} 
-            />
-            <h2 className={styles.cardTitle}>{card.title}</h2>
-            <p className={styles.cardAuthor}>{card.author}</p>
-            <button className={styles.playButton}>Play</button>
-          </div>
-        ))}
+        {error ? (
+          <p>{error}</p>
+        ) : cards.length > 0 ? (
+          cards.map(card => (
+            <div key={card.id} className={styles.card}>
+              <img 
+                src={card.image} 
+                alt={`Card ${card.id}`} 
+                className={styles.cardImage} 
+              />
+              <h2 className={styles.cardTitle}>{card.title}</h2>
+              <p className={styles.cardAuthor}>{card.author}</p>
+              <button className={styles.playButton}>Play</button>
+            </div>
+          ))
+        ) : (
+          <p>Nessuna card disponibile.</p>
+        )}
       </div>
 
       {/* Footer */}
