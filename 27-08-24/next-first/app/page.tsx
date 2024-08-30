@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import styles from './Home.module.css';
+import styles from './styles/styles.module.css'; 
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';  
 import Link from 'next/link';
-
 
 // Definizione del tipo per le card
 interface Card {
@@ -36,21 +37,13 @@ const Home: React.FC = () => {
     fetchCards();
   }, []);
 
+  // Limita il numero di card da visualizzare a 6
+  const displayedCards = cards.slice(0, 6);
+
   return (
     <div className={styles.container}>
       {/* Navbar */}
-      <nav className={styles.navbar}>
-        <img 
-          src="/img/sight music_marchiobianco.png"  
-          alt="Sight Music Logo"  
-          className={styles.navLogo} 
-        />
-        <ul className={styles.navList}>
-          <li className={styles.navItem}><Link href="/project">Il progetto</Link></li>
-          <li className={styles.navItem}><a href="#branimusicali">Brani Musicali</a></li>
-          <li className={styles.navItem}><a href="#contatti">Contatti</a></li>
-        </ul>
-      </nav>
+      <NavBar />
 
       {/* Contenuto principale */}
       <img 
@@ -62,8 +55,8 @@ const Home: React.FC = () => {
       <div className={styles.cardContainer}>
         {error ? (
           <p>{error}</p>
-        ) : cards.length > 0 ? (
-          cards.map(card => (
+        ) : displayedCards.length > 0 ? (
+          displayedCards.map(card => (
             <div key={card.id} className={styles.card}>
               <img 
                 src={card.image} 
@@ -81,27 +74,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerLogo}>
-          <img 
-            src="/img/sight music_marchiobianco.png"  
-            alt="Sight Music Logo"  
-            className={styles.footerLogoImage} 
-          />
-        </div>
-        <nav className={styles.footerNav}>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}><Link href="/project">Il progetto</Link></li>
-            <li className={styles.navItem}><a href="#branimusicali">Brani Musicali</a></li>
-            <li className={styles.navItem}><a href="#contatti">Contatti</a></li>
-            <li className={styles.navItem}><a href="#terminiecondizioni">Termini e condizioni</a></li>
-            <li className={styles.navItem}><a href="#privacypolicy">Privacy Policy</a></li>
-          </ul>
-        </nav>
-        <div className={styles.footerText}>
-          <p>©2024 Sight Music | Tutti i diritti sono riservati</p>
-        </div>
-      </footer>
+      <Footer />  {/* Usa componente Footer */}
     </div>
   );
 };

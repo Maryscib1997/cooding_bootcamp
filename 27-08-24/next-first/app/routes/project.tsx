@@ -1,4 +1,3 @@
-// src/app/project.tsx
 import React from 'react';
 
 const Project: React.FC = () => {
