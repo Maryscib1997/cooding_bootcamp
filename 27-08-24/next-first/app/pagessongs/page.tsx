@@ -10,7 +10,8 @@ const Project: React.FC = () => {
     <div>
       <NavBar />
       <div className={styles.contentContainer}>
-      <h1 className={styles.heading}>Il Progetto</h1> 
+      <h1 className={styles.heading}>Sinfonia n.5</h1> 
+      <h2 className={styles.heading}>Ludwig van Beethoven</h2> 
       </div>
       <Footer /> {/* Usa componente Footer */}
     </div>

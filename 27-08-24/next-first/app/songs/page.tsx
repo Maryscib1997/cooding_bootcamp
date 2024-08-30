@@ -11,8 +11,10 @@ const Project: React.FC = () => {
   return (
     <div>
       <NavBar />
+      <div className={styles.contentContainer}>
       <h1 className={styles.heading}>I nostri brani</h1> 
       <CardList />
+      </div>
       <Footer /> {/* Usa componente Footer */}
     </div>
   );
