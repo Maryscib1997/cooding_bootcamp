@@ -18,7 +18,7 @@ function Footer() {
         <ul className={styles.navList}>
           <li className={styles.navItem}><Link href="/projects">Il progetto</Link></li>
           <li className={styles.navItem}><Link href="/songs">Brani Musicali</Link></li>
-          <li className={styles.navItem}><a href="#contatti">Contatti</a></li>
+          <li className={styles.navItem}><Link href="/contact">Contatti</Link></li>
           <li className={styles.navItem}><a href="#terminiecondizioni">Termini e condizioni</a></li>
           <li className={styles.navItem}><a href="#privacypolicy">Privacy Policy</a></li>
         </ul>
