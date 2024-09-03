@@ -98,7 +98,10 @@
   flex-wrap: wrap;
   gap: 20px;     
   justify-content: center;  
-  margin-top: 60px;
+  margin-top: 100px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Card */
@@ -140,7 +143,7 @@
   color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 21px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -283,4 +286,123 @@
 
 .submitButton:hover {
   background-color: #333333; /* Cambia il colore di sfondo quando si passa sopra */
+}
+
+
+/* Media query per tablet */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navList {
+    flex-direction: column;
+  }
+
+  .navItem {
+    padding: 8px;
+  }
+
+  .logo {
+    height: 400px;
+  }
+
+  .imageText {
+    font-size: 20px;
+    top: 60%;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 90%;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footerNav .navItem {
+    margin: 5px;
+  }
+
+  .contactForm {
+    flex-direction: column;
+  }
+
+  .formGroup {
+    max-width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
+
+/* Media query per smartphone */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navList {
+    flex-direction: column;
+  }
+
+  .navItem {
+    padding: 5px;
+  }
+
+  .logo {
+    height: 300px;
+  }
+
+  .imageText {
+    font-size: 16px;
+    top: 50%;
+  }
+
+  .cardContainer {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footerNav .navItem {
+    margin: 3px;
+  }
+
+  .contactForm {
+    padding: 10px;
+  }
+
+  .formGroup {
+    max-width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
 }

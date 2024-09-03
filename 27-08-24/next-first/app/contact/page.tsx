@@ -10,7 +10,7 @@ const ContactPage: React.FC = () => {
     <div>
       <NavBar />
       <div className={styles.contentContainer}>
-        <h1 className={styles.heading}>Contatti</h1> 
+        <h1 className={`${styles.heading} ${styles.h1}`}>Contatti</h1>
         <div className={styles.contactDetails}>
           <p>Telefono: +39 042 333 6345</p>
           <p>Email: info@singhtmusic</p>
