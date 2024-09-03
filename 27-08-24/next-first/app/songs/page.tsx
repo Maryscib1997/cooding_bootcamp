@@ -12,7 +12,7 @@ const Project: React.FC = () => {
     <div>
       <NavBar />
       <div className={styles.contentContainer}>
-      <h1 className={styles.heading}>I nostri brani</h1> 
+      <h1 className={`${styles.heading} ${styles.h1}`}>I nostri brani</h1> 
       <CardList />
       </div>
       <Footer /> {/* Usa componente Footer */}

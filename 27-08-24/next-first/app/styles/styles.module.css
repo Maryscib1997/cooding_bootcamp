@@ -15,6 +15,15 @@
 
 .heading {
   margin-bottom: 20px; /* Spazio tra h1 e le card */
+  text-align: center;
+}
+
+.heading.h1 {
+  font-size: 3.5em; /* Dimensione di h1 */
+}
+
+.heading.h2 {
+  font-size: 1.8em; /* Dimensione di h2 */
 }
 
 /* Stile per la navbar */
@@ -73,7 +82,7 @@
 /* Testo sopra l'immagine */
 .imageText {
   position: absolute; 
-  top: 80%; 
+  top: 70%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: white; 
@@ -141,6 +150,20 @@
   background-color: #ebebeb;  
   color: #000000;
 }
+
+.paragraph {
+  color: #000; 
+  font-size: 16px;
+  line-height: 1.5; 
+  margin: 10px 0;
+  text-align: justify;       
+  width: 50%;                
+  margin-left: auto;         
+  margin-right: auto;       
+  margin-top: 20px;
+}
+
+
 
 /* Stile per il footer */
 .footer {
