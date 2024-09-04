@@ -1,18 +1,17 @@
-'use client';
-
 import Link from 'next/link';
-import styles from '../styles/styles.module.css'; 
+import styles from './Footer.module.css';
 
 function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerLogo}>
-      <Link href="/">
-        <img
-          src="/img/sight music_marchiobianco.png"
-          alt="Sight Music Logo"
-          className={styles.footerLogoImage} />
-      </Link>
+        <Link href="/">
+          <img
+            src="/img/sight music_marchiobianco.png"
+            alt="Sight Music Logo"
+            className={styles.footerLogoImage}
+          />
+        </Link>
       </div>
       <nav className={styles.footerNav}>
         <ul className={styles.navList}>

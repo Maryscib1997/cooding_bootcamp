@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import styles from '../styles/styles.module.css';
+import styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {
   return (

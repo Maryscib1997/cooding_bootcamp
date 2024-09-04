@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from '../styles/styles.module.css';
+import styles from './Card.module.css';
+import Button from '../../Atoms/Button/Button'; 
 
 interface CardProps {
   id: number;
@@ -18,8 +18,8 @@ const Card: React.FC<CardProps> = ({ id, image, title, author }) => {
       />
       <h2 className={styles.cardTitle}>{title}</h2>
       <p className={styles.cardAuthor}>{author}</p>
-      {/* Collegamento alla pagina song */}
-      <Link href="/pagessongs" className={styles.playButton}>Play</Link>
+      {/* Usa il componente Button con href per i link */}
+      <Button label="Play" href="/pagessongs" />
     </div>
   );
 };

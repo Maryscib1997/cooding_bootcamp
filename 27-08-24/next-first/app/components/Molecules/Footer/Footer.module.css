@@ -1,0 +1,87 @@
+/* Stile per il footer */
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 140px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5); 
+    text-decoration: none;
+  }
+  
+  /* Logo nel footer */
+  .footerLogo {
+    margin-bottom: 30px; /* Spazio tra il logo e la nav del footer */
+    margin-top: 20px;
+  }
+  
+  .footerLogoImage {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Navigazione nel footer */
+  .footerNav {
+    margin-bottom: 20px; /* Spazio tra la nav e il testo del footer */
+  }
+  
+  .footerNav .navList {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footerNav .navItem {
+    margin: 0 15px; /* Spazio tra gli elementi di navigazione */
+  }
+  
+  /* Testo del footer */
+  .footerText {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footerText p {
+    margin: 0; 
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footerNav .navItem {
+    margin: 5px;
+  }
+
+
+.navItem {
+  margin: 0 15px; /* Spazio tra gli elementi di navigazione */
+}
+
+.navItem a {
+  color: white; /* Colore del testo dei link */
+  text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+.navItem a:hover {
+  text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+}
+
+.footerText {
+  font-size: 14px; /* Dimensione del testo nel footer */
+  color: #ffffff; /* Colore del testo */
+  margin-top: 20px; /* Spazio sopra il testo del footer */
+}
+
+.footerLogoImage {
+  width: 150px; 
+  height: auto;
+}

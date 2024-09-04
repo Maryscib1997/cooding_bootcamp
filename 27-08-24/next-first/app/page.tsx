@@ -1,9 +1,9 @@
 'use client';
 
 import styles from './styles/styles.module.css'; 
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import CardList from './components/CardList';
+import NavBar from './components/Molecules/NavBar/NavBar';
+import Footer from './components/Molecules/Footer/Footer';
+import CardList from './components/Organism/Card/CardList';
 
 const Home: React.FC = () => {
   return (

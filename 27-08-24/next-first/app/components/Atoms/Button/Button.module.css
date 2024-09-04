@@ -1,0 +1,34 @@
+.main {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  .main:hover {
+    background-color: #ebebeb;
+    color: #000000;
+  }
+  
+  /* Pulsante di play */
+  .playButton {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover sul pulsante di play */
+  .playButton:hover {
+    background-color: #ebebeb;  
+    color: #000000;
+  }
+
+  

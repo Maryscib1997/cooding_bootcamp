@@ -1,11 +1,10 @@
 'use client';
 
 import React from 'react';
-import NavBar from '../components/NavBar'; 
-import Footer from '../components/Footer'; 
-import CardList from '../components/CardList';
-import styles from '../styles/styles.module.css';
- 
+import NavBar from '../components/Molecules/NavBar/NavBar'; 
+import Footer from '../components/Molecules/Footer/Footer'; 
+import CardList from '../components/Organism/Card/CardList';
+import styles from './page.module.css'; 
 
 const Project: React.FC = () => {
   return (

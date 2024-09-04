@@ -1,0 +1,88 @@
+.container {
+    text-align: center;
+    background-color: #ebebeb;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    margin-top: 60px; 
+  }
+
+.heading {
+    margin-bottom: 20px; /* Spazio tra h1 e le card */
+    text-align: center;
+  }
+  
+.heading.h1 {
+    font-size: 3.5em; /* Dimensione di h1 */
+  }
+
+.heading.h2 {
+    font-size: 1.8em; /* Dimensione di h2 */
+}
+
+
+  
+  .contactDetails {
+    margin-bottom: 40px;
+  }
+  
+  .contactDetails p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    resize: none;
+  }
+  
+  .formGroup {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block; 
+  }
+  
+  .submitButton:hover {
+    background-color: #333333; /* Cambia il colore di sfondo quando si passa sopra */
+  }
+  

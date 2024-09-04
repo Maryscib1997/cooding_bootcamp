@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import styles from '../styles/styles.module.css';
 import Card from './Card';
+import styles from './Card.module.css';
 
 // Definizione del tipo per le card
 interface CardData {

@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '../components/NavBar'; 
-import Footer from '../components/Footer'; 
-import styles from '../styles/styles.module.css'; 
+import NavBar from '../components/Molecules/NavBar/NavBar';
+import Footer from '../components/Molecules/Footer/Footer';
+import styles from './page.module.css';
 
 const Project: React.FC = () => {
   return (
@@ -25,6 +25,27 @@ const Project: React.FC = () => {
         <p className={styles.paragraph}>
           <b>Sight Music</b> si inserisce in questa tradizione, dimostrando che la traduzione tra arti diverse è non solo possibile, ma anche arricchente. Suoni e immagini si fondono, permettendo di tradurre emozioni e sentimenti attraverso linguaggi diversi. La piattaforma invita l'utente a esplorare questa sinergia, scoprendo come le note possano diventare forme, e le forme possano raccontare melodie.
         </p>
+
+        {/* Immagini con didascalia */}
+        <div className={styles.imageContainer}>
+          <div className={styles.imageWrapper}>
+            <img 
+              src="/img/music_sinfonia5.jpg" 
+              alt="Sinfonia n°5 Beethoven" 
+              className={styles.image}
+            />
+            <figcaption className={styles.caption}>Primo movimento della <i>Sinfonia n. 5</i> di Beethoven </figcaption>
+          </div>
+
+          <div className={styles.imageWrapper}>
+            <img 
+              src="/img/music_sinfonia52.jpg" 
+              alt="Traduzione Sinfonia n°5 Kandinskij" 
+              className={styles.image}
+            />
+            <figcaption className={styles.caption}>Traduzione <i>Sinfonia n. 5</i> proposta nel 1926 da Kandinskij</figcaption>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
@@ -32,4 +53,3 @@ const Project: React.FC = () => {
 };
 
 export default Project;
-
