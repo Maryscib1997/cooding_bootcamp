@@ -1,73 +1,73 @@
 [
   {
     "id": 1,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card.jpg",
     "title": "Sinfonia n.5",
     "author": "Ludwig van Beethoven"
   },
   {
     "id": 2,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card2.jpg",
     "title": "Concerto per Pianoforte n.21",
     "author": "Wolfgang Amadeus Mozart"
   },
   {
     "id": 3,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card3.jpg",
     "title": "Le Sacre du Printemps",
     "author": "Igor Stravinsky"
   },
   {
     "id": 4,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card4.jpg",
     "title": "Sinfonia n.7",
     "author": "Antonín Dvořák"
   },
   {
     "id": 5,
-    "image": "/img/card/sinfonia.jpg",
+    "image": "/img/card/card5.jpg",
     "title": "Adagio per Archi",
     "author": "Samuel Barber"
   },
   {
     "id": 6,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card6.jpg",
     "title": "Piano Concerto No. 2",
     "author": "Sergei Rachmaninoff"
   },
   {
     "id": 7,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card7.jpg",
     "title": "Rhapsody in Blue",
     "author": "George Gershwin"
   },
   {
     "id": 8,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card8.jpg",
     "title": "Boléro",
     "author": "Maurice Ravel"
   },
   {
     "id": 9,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card9.jpg",
     "title": "La Mer",
     "author": "Claude Debussy"
   },
   {
     "id": 10,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card10.jpg",
     "title": "Symphony No. 1",
     "author": "Dmitri Shostakovich"
   },
   {
     "id": 11,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card11.jpg",
     "title": "Symphony No. 3",
     "author": "Johannes Brahms"
   },
   {
     "id": 12,
-    "image": "/img//card/sinfonia.jpg",
+    "image": "/img//card/card12.jpg",
     "title": "Piano Sonata No. 14",
     "author": "Ludwig van Beethoven"
   }

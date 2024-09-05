@@ -29,11 +29,12 @@
 /* Testo sopra l'immagine */
 .imageText {
   position: absolute; 
-  top: 80%; 
+  align-items: center;
+  top: 70%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: white; 
-  font-size: 32px; 
+  font-size: 40px; 
   font-weight: bold; 
   padding: 10px;
   border-radius: 8px; 
@@ -41,7 +42,7 @@
 
 
 .logo {
-  height: 650px;
+  height: 750px;
   width: 100%;
   object-fit: cover;
   display: block;
